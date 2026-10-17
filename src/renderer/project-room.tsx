@@ -16,7 +16,7 @@ import { LOG_READS, type LogTarget } from '../shared/work-log';
 import { RESULT_READS } from '../shared/round-results';
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode, type Ref } from 'react';
 import { createPortal } from 'react-dom';
-import { AlertTriangle, AppWindow, ArrowLeft, Check, CheckCircle2, ChevronDown, ChevronRight, ChevronUp, FileDiff, FolderOpen, Hand, Maximize2, Minimize2, PanelRightClose, PanelRightOpen, LoaderCircle, Pause, Play, ScrollText, Send, Sparkles, Square, ThumbsDown, ThumbsUp, X } from 'lucide-react';
+import { AlertTriangle, AppWindow, ArrowLeft, Check, CheckCircle2, ChevronDown, ChevronRight, ChevronUp, FileDiff, FolderOpen, Hand, Maximize2, Minimize2, PanelRightClose, PanelRightOpen, LoaderCircle, Pause, Play, ScrollText, Send, Sparkles, Square, ThumbsDown, ThumbsUp, X, Zap } from 'lucide-react';
 import type { AllowedAction, Decision, FlowOperation, Integration, Plan, ProjectFlowSnapshot, Round, Task, TaskStatus, TaskSupplement, FlowCompletionReport } from '../shared/project-flow';
 import {FLOW_LIMITS,reviewLevel,roundLead,roundReviewLevel,REVIEW_LEVEL_LABELS,REVIEW_LEVEL_HINTS,QUOTA_STAGE_LABELS,type ReviewLevel,type DisputeRuling} from '../shared/project-flow';
 import type { Project, RoomId, RoomMessage, Snapshot } from '../shared/types';
@@ -125,6 +125,60 @@ export function ProjectRoom({ snapshot, project, invoke, onOpenSession,onRoundta
     if (verdict === 'pass') return mutate('projectFlow.round.accept', { roundId: round.id, expectedRevision: round.revision, integrationId: integration.id, fingerprint: integration.version?.fingerprint, opinion: '验收通过' }, '已通过，正在把成品写入项目。');
     return mutate('projectFlow.round.requestChanges', { roundId: round.id, expectedRevision: round.revision, integrationId: integration.id, opinion: reason.trim() || REJECT_DEFAULT }, '已驳回，负责人会安排修正。');
   }
+  /**
+   * 托管模式（只自动处理"明确的成功"）
+   *
+   *   ✅ 方案出来 → 自动确认，并把每轮设成"负责人自验"，不用逐轮点
+   *   ✅ 某轮成品就绪 → 自动验收通过
+   *   ⛔ 决策卡 / 检查不通过 / 任务失败 → 停下等你（方向性问题不代你决定）
+   *
+   * 状态存在 localStorage，按项目隔离。
+   */
+  const autopilotKey = 'airoom.autopilot.' + project.id;
+  const [autopilot, setAutopilot] = useState(false);
+  const [autopilotLog, setAutopilotLog] = useState<string[]>([]);
+  useEffect(() => {
+    try { setAutopilot(localStorage.getItem(autopilotKey) === '1'); } catch {}
+  }, [autopilotKey]);
+  function toggleAutopilot(on: boolean) {
+    setAutopilot(on);
+    try { localStorage.setItem(autopilotKey, on ? '1' : '0'); } catch {}
+    if (!on) setAutopilotLog([]);
+  }
+  useEffect(() => {
+    if (!autopilot || !live || busy || flow?.status !== 'active') return;
+    const timer = setTimeout(async () => {
+      // ① 方案待确认 → 自动确认（每轮改成负责人自验）
+      if (plan && plan.status === 'awaiting_confirmation') {
+        const selfAccept: Record<string, boolean> = {};
+        for (const r of plan.rounds) selfAccept[r.key] = false;
+        const ok = await mutate('projectFlow.plan.confirm', {
+          planId: plan.id,
+          expectedRevision: plan.revision,
+          requiresUserAcceptanceByRound: selfAccept,
+          requiresPeerReviewByRound: {},
+          reviewLevelByRound: {},
+        });
+        setAutopilotLog(list => [(ok ? '✅' : '❌') + ' 自动确认方案第 ' + plan.version + ' 版', ...list].slice(0, 20));
+        return;
+      }
+      // ② 有轮次成品就绪 → 自动验收通过
+      const ready = rounds.find(r => {
+        if (r.status !== 'awaiting_acceptance' || !r.requiresUserAcceptance) return false;
+        const it = data?.integrations.find(i => i.id === r.integrationId);
+        return it?.status === 'ready' && allowed(r.allowedActions, 'projectFlow.round.accept');
+      });
+      if (ready) {
+        const it = data!.integrations.find(i => i.id === ready.integrationId)!;
+        const ok = await decide(ready, it, 'pass');
+        setAutopilotLog(list => [(ok ? '✅' : '❌') + ' 自动验收 第 ' + (ready.index + 1) + ' 轮「' + ready.title + '」', ...list].slice(0, 20));
+      }
+    }, 1200);
+    return () => clearTimeout(timer);
+  }, [autopilot, live, busy, flow?.status, plan?.id, plan?.revision, plan?.status,
+      rounds.map(r => r.id + ':' + r.status + ':' + r.revision).join(','),
+      data?.integrations.map(i => i.id + ':' + i.status).join(',')]);
+
   /** The plan is drafted from this room's discussion, which the backend brings along; it says so when there is none yet. */
   async function start(leadMemberId: string, memberIds: string[]) {
     const ok = await mutate('projectFlow.start', { projectId: project.id, leadMemberId, memberIds, reviewLevel: newReviewLevel,includePreviousRecord }, '已请负责人根据讨论起草方案，你确认后才开工。');
@@ -215,6 +269,7 @@ export function ProjectRoom({ snapshot, project, invoke, onOpenSession,onRoundta
         <span className={data!.overview.needsUser ? 'needs-user' : ''}><strong>{data!.overview.needsUser}</strong>待你决定</span></div>}
       {data&&(fresh||live)&&<label className="project-review-level">复核程度<select aria-label="项目复核程度" aria-describedby={fresh?"project-review-help":undefined} disabled={busy} value={fresh?newReviewLevel:reviewLevel(flow!)} title={`${REVIEW_LEVEL_HINTS[fresh?newReviewLevel:reviewLevel(flow!)]}
 调整只影响尚未开始的复核，已完成和在途的复核记录保留。`} onChange={event=>{const level=event.target.value as ReviewLevel;if(fresh)setNewReviewLevel(level);else void mutate('projectFlow.review.configure',{flowId:flow!.id,expectedRevision:flow!.revision,reviewLevel:level},'复核程度已调整，已完成的记录保留。');}}>{(['high','medium','low'] as const).map(level=><option key={level} value={level}>{REVIEW_LEVEL_LABELS[level]}</option>)}</select></label>}
+      {data&&(fresh||live)&&<button type="button" className={'button small autopilot-toggle ' + (autopilot ? 'primary' : 'secondary')} aria-pressed={autopilot} title={'托管模式：方案出来自动确认、成品就绪自动验收；决策卡和失败仍然停下等你。' + (autopilotLog.length ? ' 已自动执行 ' + autopilotLog.length + ' 步。' : '')} onClick={() => toggleAutopilot(!autopilot)}><Zap size={13} />{autopilot ? '托管中' : '托管模式'}</button>}
       {flow && live && <div className="project-room-controls">
         {flow.dispatchMode === 'running' && !canRetry
           ? <button type="button" className="button small secondary" disabled={busy || !allowed(data!.allowedActions, 'projectFlow.pause')} title="已在做的任务会做完并保存；之后不派新任务" onClick={() => void mutate('projectFlow.pause', { flowId: flow.id, expectedRevision: flow.revision, mode: 'dispatch' }, '已暂停派发新任务；在做的任务会做完。')}><Pause size={13} />暂停</button>
@@ -222,6 +277,12 @@ export function ProjectRoom({ snapshot, project, invoke, onOpenSession,onRoundta
         <button type="button" className="icon-button danger" aria-label="取消流程" title="取消流程（记录和成果保留）" disabled={busy} onClick={() => { if (window.confirm('取消这个项目流程？已有成果和记录会保留，在做的任务会停下。')) void mutate('projectFlow.cancel', { flowId: flow.id, expectedRevision: flow.revision }, '项目流程已取消，记录保留。'); }}><Square size={14} /></button>
       </div>}
     </header>
+    {flow && live && autopilot && <div className="autopilot-strip" role="status" aria-label="托管记录">
+      <Zap size={14} />
+      <strong>托管中</strong>
+      <span>{autopilotLog.length ? autopilotLog.length + ' 步 · 最近：' + autopilotLog[0] : '方案出来会自动确认；成品就绪会自动验收。决策卡和失败会停下等你。'}</span>
+      {autopilotLog.length > 1 && <details><summary>全部记录</summary><ol>{autopilotLog.map((line, index) => <li key={index}>{line}</li>)}</ol></details>}
+    </div>}
     {data&&fresh&&<p className="project-review-help" id="project-review-help" aria-label="复核方式说明">{REVIEW_LEVEL_HINTS[fresh?newReviewLevel:reviewLevel(flow!)]} 补正、重试和额外检查另计调用。简单整理可直接在成员工位完成；比较方案可使用圆桌。</p>}
     <ActiveRunProgress snapshot={snapshot} invoke={invoke} sessionIds={snapshot.sessions.filter(session=>session.projectId===project.id&&Boolean(session.flowId)).map(session=>session.id)} label="项目阶段"/>
     <div className="project-room-subbar">

@@ -846,3 +846,24 @@ details[open]::details-content { block-size: auto; }
 .plan-owner-select:hover { border-color: rgba(120, 100, 80, 0.6); }
 .plan-owner-select:disabled { opacity: 0.5; }
 
+
+/* 托管模式：方案自动确认 + 成品自动验收 */
+.autopilot-strip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 10px;
+  padding: 7px 12px;
+  border-radius: 8px;
+  background: rgba(120, 160, 255, 0.12);
+  border: 1px solid rgba(120, 160, 255, 0.35);
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+.autopilot-strip strong { white-space: nowrap; }
+.autopilot-strip span { flex: 1; opacity: 0.85; }
+.autopilot-strip details summary { cursor: pointer; opacity: 0.7; white-space: nowrap; }
+.autopilot-strip ol { margin: 6px 0 0; padding-left: 18px; max-height: 180px; overflow: auto; }
+.autopilot-strip li { margin: 2px 0; }
+.autopilot-toggle { white-space: nowrap; }
+.project-room-head .autopilot-toggle { margin-right: 4px; }
