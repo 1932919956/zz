@@ -15,7 +15,7 @@ AIROOM 是一个装在自己电脑上的“AI 工作室”。
 >
 > 本仓库基于 [tonyAmadeus/offAice](https://github.com/tonyAmadeus/offAice) 修改而来，原项目及其作者保留全部权利；本仓库只新增了下文「这个分支多了什么」里列出的能力。
 
-[下载最新版本](https://github.com/1932919956/zz/releases) · [技术说明](docs/技术说明.md) · [用 AI 修改和部署 AIROOM](docs/AI协作开发指南.md) · [适配层说明](bridge/README.md)
+[下载最新版本](https://github.com/1932919956/zz/releases) · [技术说明](docs/技术说明.md) · [用 AI 修改和部署 AIROOM](docs/AI协作开发指南.md) · [适配层说明](bridge/README.md) · **[本分支改了什么](docs/本分支改动.md)** · [更新日志](CHANGELOG.md)
 
 - **免安装版**：下载 `AIROOM-0.1.0-Windows-x64-Green.zip`，**完整解压后双击 `AIROOM.exe`**；
 - **安装版**：下载 `AIROOM-Setup-0.1.0.exe`，按向导安装，可选择安装目录，附带卸载程序。
@@ -29,6 +29,8 @@ AIROOM 是一个装在自己电脑上的“AI 工作室”。
 ## 这个分支多了什么
 
 在原版基础上补了一批"能真干活"的能力。**核心是 `bridge/` 这个适配层** —— 它让"任何 OpenAI 兼容接口"都能变成一个能读写文件、跑命令、生图的成员。
+
+> 这里是**概述**。逐条对比（改前 / 改后 / 为什么改 / 涉及哪个文件）见 **[docs/本分支改动.md](docs/本分支改动.md)**，按版本列的时间线见 **[CHANGELOG.md](CHANGELOG.md)**。
 
 ### 1. API 成员：不装任何客户端也能用
 
