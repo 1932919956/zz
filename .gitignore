@@ -1,0 +1,9 @@
+node_modules/
+*.exe
+*.map
+dist-backup-*/
+workspace/
+.airoom/
+__pycache__/
+*.pyc
+*.log

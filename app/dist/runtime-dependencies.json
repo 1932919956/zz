@@ -1,0 +1,1107 @@
+{
+  "schemaVersion": 1,
+  "platform": "win32",
+  "arch": "x64",
+  "lockSha256": "9fbe3d9cbab6eec3da095e958c65e4c515c2ae38a7919e09734e9ded7f7e5219",
+  "packages": [
+    {
+      "path": "node_modules/@types/react",
+      "version": "19.3.0",
+      "packageJsonSha256": "505c0df4cd73d6a02c946bd9b81451584bd9c83ea72d75cff9b826efceaa19c2",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/7zip-bin",
+      "version": "5.2.0",
+      "packageJsonSha256": "2c84b5d388c547bb7878af64ff7ef40e774c8cef37387c3d0a52d5815e6421bc",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/csstype",
+      "version": "3.2.3",
+      "packageJsonSha256": "c818b74a9bc1556488b7ec2a65399224738f6619228f9a6491c5c02ca91f849e",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/lucide-react",
+      "version": "1.51.0",
+      "packageJsonSha256": "51e90c202224e832d65de3157bc3bd543d51e668451b732b2876bec01380feb7",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm",
+      "version": "12.1.0",
+      "packageJsonSha256": "4c393f45a1be2a67e64af96e937ee4ee11aed8ca6b35c0fc309dcf94539e8f4d",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@gar/promise-retry",
+      "version": "1.0.3",
+      "packageJsonSha256": "eb1b40048ddbbd28e4bb0f663b10054ce27733ff0d65cfa4e6698ad2633d2ade",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@isaacs/fs-minipass",
+      "version": "4.0.1",
+      "packageJsonSha256": "ab8c1c2bce664e4c76b1937fa1a28f00ca5231a70cf0c1f78dd473101a9d2a88",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@isaacs/string-locale-compare",
+      "version": "1.1.0",
+      "packageJsonSha256": "45b3f486e72a9d0e0279cda0003713dde115b7d0d75c4acfa7129cffb97e4ab3",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@npmcli/agent",
+      "version": "5.0.2",
+      "packageJsonSha256": "598f837be03377b5b833183e3cead342746cf06f64739f30a68ecf891601f66e",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@npmcli/agent/node_modules/agent-base",
+      "version": "9.0.0",
+      "packageJsonSha256": "13df46dd018fcf2e4231a0f47a1a007dd7d5441d9f8efb108f50f9fb64a17138",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@npmcli/agent/node_modules/http-proxy-agent",
+      "version": "9.1.0",
+      "packageJsonSha256": "03703c6c566b00d8fd85ba57cd6460b14d0b762f694e26f0efbfe4e5384e3081",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@npmcli/agent/node_modules/https-proxy-agent",
+      "version": "9.1.0",
+      "packageJsonSha256": "50d17385a8c63c0ed0e138069617d4d9236ce92bddbe6f52cfec0e3a834c97a0",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@npmcli/arborist",
+      "version": "10.0.3",
+      "packageJsonSha256": "b1b3e006e70eb4420f0ef6185c61ea0d1fd3c327c6ea03b150376578b9b65cc5",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@npmcli/config",
+      "version": "11.1.0",
+      "packageJsonSha256": "13e7e231b72eeb8ed15e1a3343b4a85dde279e16aebf661c924fb7b9219d87a8",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@npmcli/fs",
+      "version": "6.0.0",
+      "packageJsonSha256": "c787a9ac214de77c77d34d548f285b6382137ba7984c368c086411c398115173",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@npmcli/git",
+      "version": "8.0.0",
+      "packageJsonSha256": "b0e0740849424292739df11d1330e58337f21ca2f7dcdced6fd23f6edb1a5dd6",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@npmcli/installed-package-contents",
+      "version": "5.0.0",
+      "packageJsonSha256": "ba9ea32ea0a810ab5c08014a998f407e04f9a0c38c26c6610827bf40db6040e1",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@npmcli/installed-package-contents/node_modules/npm-bundled",
+      "version": "6.0.0",
+      "packageJsonSha256": "a9e0a0aa2df9d83a94f44301cbb279afc44cc6a2dd6660fd92f856ba78bf1a25",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@npmcli/installed-package-contents/node_modules/npm-normalize-package-bin",
+      "version": "6.0.0",
+      "packageJsonSha256": "9ebac37059e17adaf6d0b062d6614ec77c4f03ab6959688f3e8b8db0a57978eb",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@npmcli/map-workspaces",
+      "version": "6.0.0",
+      "packageJsonSha256": "050cde9bfd9195a16cd4ae4e7ad593ebc844f8c4b686f2ca783d69746407020d",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@npmcli/metavuln-calculator",
+      "version": "10.0.0",
+      "packageJsonSha256": "e771a90b1e14b042bf87c653fc86fccaab1cb9ecf469cb3c1f0bd4abaff9c6db",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@npmcli/name-from-folder",
+      "version": "5.0.0",
+      "packageJsonSha256": "e24d1c255ffcf24c660a7352c3c2ed5990a7f4d41c409597d32979816d40eddc",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@npmcli/node-gyp",
+      "version": "6.0.0",
+      "packageJsonSha256": "b0017afac8507e491663adf5c12c155c63b5cd1aa4cd852f6c8e4ff51caea966",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@npmcli/package-json",
+      "version": "8.0.0",
+      "packageJsonSha256": "f5f79d1542c3a7e002a6112dce89fca253377daaedb49b63fabc4deea7c8c384",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@npmcli/promise-spawn",
+      "version": "10.0.0",
+      "packageJsonSha256": "e6ee346eacafc0d772a4a67e53ccc6ee307a0adfbeace70d309c77e6c0e0f360",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@npmcli/query",
+      "version": "5.0.0",
+      "packageJsonSha256": "3a40e24de5508329d3c41c098704defe72c94790ed01aeccbf4bef544c069888",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@npmcli/redact",
+      "version": "5.0.0",
+      "packageJsonSha256": "9954e4f5b0e7aa04fa807982012f0e558119121c56e0666c541d47256dfaba47",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@npmcli/run-script",
+      "version": "11.0.0",
+      "packageJsonSha256": "dcc9ad8e7cd50a1689d42b203990b5bed0ea4425b3fdf4c87d584b3a3fc94bce",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@sigstore/bundle",
+      "version": "5.0.0",
+      "packageJsonSha256": "410d257b34acb53ca90eec9663e626a040de96e1f2e6e069913a32d4287e1e98",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@sigstore/core",
+      "version": "4.0.1",
+      "packageJsonSha256": "55d00d9cfae15f310382659245d3829fc9a5a615953bf8691127bbb80d1bd44a",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@sigstore/protobuf-specs",
+      "version": "0.5.1",
+      "packageJsonSha256": "a4650a93b61175e9a063745f9449c6f3d1a28a3bdec0528937e16ec7d3f68353",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@sigstore/sign",
+      "version": "5.0.0",
+      "packageJsonSha256": "2fa6f7d1310b9186d5b690ffe471f0b2c3148748bea2ba69cf71a79b33bebab0",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@sigstore/tuf",
+      "version": "5.0.0",
+      "packageJsonSha256": "d9744179103dd60c3c8d63caf6ecc3acfb1f8b040a0ae4e3adc790833a12ba59",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@sigstore/verify",
+      "version": "4.1.0",
+      "packageJsonSha256": "51daef12d4a095e7af587778ecfdd5e46b31c7012d3518c53ef57f6d749b36c8",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@tufjs/canonical-json",
+      "version": "2.0.0",
+      "packageJsonSha256": "8c09f4774a7dddb18c24d85cc833c8a847b829f87ce45f1c2a74a61a23a4f4fd",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/@tufjs/models",
+      "version": "5.0.0",
+      "packageJsonSha256": "ebc1c01ce6b4ff90d5d2dd20789163ec5c64dd05afb485cde04365866e586e59",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/abbrev",
+      "version": "5.0.0",
+      "packageJsonSha256": "cde9446d72d605fdfe65bbadea7a3946feb2ef49a4e653535e46bbef80fb2b06",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/aproba",
+      "version": "2.1.0",
+      "packageJsonSha256": "101af34140df8cc001408d7efff7f6a87967228755caa846276ab6e72dfe0e7a",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/archy",
+      "version": "1.0.0",
+      "packageJsonSha256": "110f0d7b53d31af7e873b09aaeed3f951bed467697ce3b672fb7e8a9b8a4925a",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/balanced-match",
+      "version": "4.0.4",
+      "packageJsonSha256": "c984e6ae5c41fac085a07a732b665b22e0a26f28b61c692ba18ff458a8ecc95a",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/bin-links",
+      "version": "7.0.0",
+      "packageJsonSha256": "a9fccd3c45f1564e9b5fe06f515c7fca4f6f128e7c3ba1af6c10e260805ac2c1",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/bin-links/node_modules/cmd-shim",
+      "version": "9.0.2",
+      "packageJsonSha256": "a4754b0e8bc55c89760a2d25b9265719d6b5f43385809b1653d3cd921d3b9737",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/bin-links/node_modules/npm-normalize-package-bin",
+      "version": "6.0.0",
+      "packageJsonSha256": "9ebac37059e17adaf6d0b062d6614ec77c4f03ab6959688f3e8b8db0a57978eb",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/bin-links/node_modules/read-cmd-shim",
+      "version": "7.0.0",
+      "packageJsonSha256": "f0724da8cd40467d0c0306559cbcfbcb52ebec18ab27e9c77d59e69ef99c3605",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/binary-extensions",
+      "version": "3.1.0",
+      "packageJsonSha256": "c95ce9b04471a79747ec6168c4da875fd00bd10b6175aa186ec31addd6cbcacc",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/brace-expansion",
+      "version": "5.0.9",
+      "packageJsonSha256": "f8a0e0d0a6cbb58106ce6832205e0939a00b9583637011bf8ef4167f4a52fbda",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/cacache",
+      "version": "21.0.1",
+      "packageJsonSha256": "c428f91c3bc010eddd534a256504c74c6c9c1263178880b192bc2c462ae6f938",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/chalk",
+      "version": "5.6.2",
+      "packageJsonSha256": "ef029c254479723c952a24c0d8d758378bd8ddf031f5bd6f027f65e1a3d030f3",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/chownr",
+      "version": "3.0.0",
+      "packageJsonSha256": "4300e90fdd91ec7035047473c60f880251a9801bd786302729d4277751d3b948",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/ci-info",
+      "version": "4.4.0",
+      "packageJsonSha256": "1d38ded11841182cf7d0d5b664c48c8e56c3a85cd8990a7711cb73c2bc0d8f7e",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/cidr-regex",
+      "version": "6.0.0",
+      "packageJsonSha256": "7cc853c1ebe3fbc10acd8cb3cd2176855245728f56386a49484d45f7af410eae",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/common-ancestor-path",
+      "version": "2.0.0",
+      "packageJsonSha256": "dab80c41d237fbbf76fda3cf19245c36325d8e6ec565d8088b8c79432aa7ebd8",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/cssesc",
+      "version": "3.0.0",
+      "packageJsonSha256": "23f134be44f2877c298ca56c5464ebbe190ddb49c3ce9b82be3c73a64512d014",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/debug",
+      "version": "4.4.3",
+      "packageJsonSha256": "ea8e33d63fe5f3a4c36609b6c3df8e2ef1f8b8ba2fc3a2e1e53cb27291f384af",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/diff",
+      "version": "8.0.4",
+      "packageJsonSha256": "372a1ad33bcaded0234d5d327d1164c18968ee3f2e9f362ddd22e4489e91e369",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/env-paths",
+      "version": "2.2.1",
+      "packageJsonSha256": "b92833e5851ec53bd4cd8093f6099d0c6e6818c4374ec1d09aa25d4f9ba91ec4",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/exponential-backoff",
+      "version": "3.1.3",
+      "packageJsonSha256": "c3076cc23aa8d9f5123900305b9c174af612bfef91211c658ab914611dd86fa8",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/fastest-levenshtein",
+      "version": "1.0.16",
+      "packageJsonSha256": "1678454ed179a645bc098b43276d816966f88d134195664538d4de1af13a61b4",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/fs-minipass",
+      "version": "3.0.3",
+      "packageJsonSha256": "e90117e65341117ce56ab6aaa8b59291210601f69c63996fbe446a9a30237fc6",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/glob",
+      "version": "13.0.6",
+      "packageJsonSha256": "5a28ef9a1f5252feb47ffe288a6350fe99b18311462e6a9cdacbdd0bb4be6be9",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/graceful-fs",
+      "version": "4.2.11",
+      "packageJsonSha256": "5747d4ba6b17165c6ecac30ab3a331715f41c7ad546e1f1574dab1bdcb116181",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/hosted-git-info",
+      "version": "10.1.1",
+      "packageJsonSha256": "4ee05f78a84ae12a87a88a8374ae594e6d3f564070f516a764e9b1ebd529bc22",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/http-cache-semantics",
+      "version": "4.2.0",
+      "packageJsonSha256": "bee0609d5ab09a590afe0e1209d3702b0afb0a3c158492f90902a724d889d22b",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/iconv-lite",
+      "version": "0.7.3",
+      "packageJsonSha256": "f24ad03476d51470a5b069e65b03ef6383d615897ffe2239edf22584ea0e3d03",
+      "peer": false,
+      "optional": true
+    },
+    {
+      "path": "node_modules/npm/node_modules/ini",
+      "version": "7.0.0",
+      "packageJsonSha256": "8fa8b0d70252d57858bae47eae4d4b8d19c83f316dddd0d4565f5626cc51e194",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/init-package-json",
+      "version": "9.0.0",
+      "packageJsonSha256": "816d2f8927475a11f6f4bf3408b2ff0c28970f6cb63e3c1892c36da69e7d7013",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/ip-address",
+      "version": "10.5.0",
+      "packageJsonSha256": "91166ee6e473fe20ec6029e6cdda2635b1e0c9bd6ec78da40a4671bf0c1eaa58",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/is-cidr",
+      "version": "7.0.0",
+      "packageJsonSha256": "49aca85989e2830eb67bf12e95d1d778b4646f748ea1399e597251b02d7c523b",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/isexe",
+      "version": "4.0.0",
+      "packageJsonSha256": "1889746f84d1e2a524353a2e31464995b808f24457f0dd55d6fd9da638f978ed",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/json-parse-even-better-errors",
+      "version": "6.0.0",
+      "packageJsonSha256": "2bbd08ac4290a63c55fe5ed28bade9aff1d7630ba86568adffd0a10712fde320",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/json-stringify-nice",
+      "version": "1.1.4",
+      "packageJsonSha256": "b1517d9a73d96ecf3b9c8b868f48e2bea71b8e13631bfceb2d7e9ce5830e69fa",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/jsonparse",
+      "version": "1.3.1",
+      "packageJsonSha256": "fd84a394475582d3aca1da89b9d2dbb193ba7952da9f8c01a5a5474505185a29",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/just-diff",
+      "version": "6.0.2",
+      "packageJsonSha256": "1df75d52a92778b327ec79137008038e49fcbb35f1b6518f6ffbeba86d797a3b",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/just-diff-apply",
+      "version": "5.5.0",
+      "packageJsonSha256": "1b721a43b3cff361a573c58e9769ccdc4350351d07d91ce69b72a2363406e61a",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/libnpmaccess",
+      "version": "11.0.0",
+      "packageJsonSha256": "0cd4fe29ee0b77290231dd55d7cbd0e3e5cb8fd0952087065491376b3c4aa262",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/libnpmdiff",
+      "version": "9.0.3",
+      "packageJsonSha256": "c6cecdd02eaff48841fe5cc78d30e12b11bbe7f1ef36127e934fc95378f47631",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/libnpmexec",
+      "version": "11.0.3",
+      "packageJsonSha256": "fef4d1ab87c747be51aa1b078ff96654802988988efb1b9674563b244a542022",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/libnpmfund",
+      "version": "8.0.3",
+      "packageJsonSha256": "f30970899260f01317a4aab7acd2dab46049d9c501b90a2f86cca8dd574b8371",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/libnpmorg",
+      "version": "9.0.0",
+      "packageJsonSha256": "b8df36a3346a0484bf6d3e1b162d19b75a6d8d210c35f7191bf0078fad972c04",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/libnpmpack",
+      "version": "10.0.3",
+      "packageJsonSha256": "e8fe2a37306bc63dc3f823433657ec84d223a2f187895eb9de45d2cb45a3c1bb",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/libnpmpublish",
+      "version": "12.0.1",
+      "packageJsonSha256": "b3c11b3f08adb1a2ebb0dc443a1ed17d8838398405598bd9fcd8f1451e9902cb",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/libnpmsearch",
+      "version": "10.0.0",
+      "packageJsonSha256": "c5626cffd6ca6aaab862173741840b7900532d47d7543bec046ebcd8fd1149f4",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/libnpmteam",
+      "version": "9.0.0",
+      "packageJsonSha256": "640626cd8e76738123e9d236c3da7426a86b44c53f209375655b932a46db895c",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/libnpmversion",
+      "version": "9.0.0",
+      "packageJsonSha256": "c1d2e2273555734170020ceba06915cead4aa5da3f27bdf066380520b147a38e",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/lru-cache",
+      "version": "11.5.2",
+      "packageJsonSha256": "c1a8f6f3a568f41be739be2ac46520312d1af6918f2c9f66ae53990a7c50b3cf",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/make-fetch-happen",
+      "version": "16.0.1",
+      "packageJsonSha256": "81aef6b930cb2462c5f5e9215c3d0ed4e682ae6277709870bf4bbf20ff13fda1",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/minimatch",
+      "version": "10.2.5",
+      "packageJsonSha256": "4b3a08a7ad20dead8bbe4b4fe97a2746bded7c51d218ef3034eb4e330ad31f08",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/minipass",
+      "version": "7.1.3",
+      "packageJsonSha256": "b8ab116187d5e9375d494f17437eb862cbee4b329c21f15412c6a5170ec2f55c",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/minipass-collect",
+      "version": "2.0.1",
+      "packageJsonSha256": "042ab826c5440a7d01a1cafae44c54840618319e2e64ed40df006c542b0768f8",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/minipass-fetch",
+      "version": "6.0.0",
+      "packageJsonSha256": "85d571df43959eef6c201e9c9023764126dfd3a5ac861efd17bb97e2d671ddba",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/minipass-flush",
+      "version": "1.0.6",
+      "packageJsonSha256": "5cd4f9c037105f2670d8afc2e0aa8c9b2fd3415fc067f79b4e17665f92e38517",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/minipass-pipeline",
+      "version": "1.2.4",
+      "packageJsonSha256": "c20f059ca6012af5a3d255948c7ab1fccc06ad1d0019c669b08ba251cd4b281d",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/minipass-pipeline/node_modules/minipass",
+      "version": "3.3.6",
+      "packageJsonSha256": "e99f6b67ba6e5cda438efb7a23dd399ee5c2070af69ce77720d95de5fb42921e",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/minipass-pipeline/node_modules/yallist",
+      "version": "4.0.0",
+      "packageJsonSha256": "c56b604bce814520105739e9559142ea9d4417454ebb933fd5687ca1d8d89bd5",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/minipass-sized",
+      "version": "2.0.0",
+      "packageJsonSha256": "7d80091eb5694c3e3509c46b3297bb5e9567cc2e6bed79c18d5e4881015ea360",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/minizlib",
+      "version": "3.1.0",
+      "packageJsonSha256": "3e3b206f94f3bd444f18fed847d8caeacb84925c628ae3d87805bc1dd6c4c470",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/ms",
+      "version": "2.1.3",
+      "packageJsonSha256": "1a6b4d9739790c0b94ab96c8cc0507e281c164c311ff4fbf5e57fb8d26290b40",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/mute-stream",
+      "version": "4.0.0",
+      "packageJsonSha256": "401a1c29257d624c1a28f6e869a7154a260f544bb41ad586694e59796def2fe8",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/negotiator",
+      "version": "1.0.0",
+      "packageJsonSha256": "a33b5a293825b22957629dafe778ea4164e577499418cd907d937b874f27675a",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/node-gyp",
+      "version": "13.0.0",
+      "packageJsonSha256": "038c5fdecbe6b54483dc803a74530ce0efb85e6460fa5875d81c2aa5d59a84b9",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/nopt",
+      "version": "10.0.1",
+      "packageJsonSha256": "a5c1fbef2c901cc729793a855eb7a1c9f8f8f1bc7e6a38e98375b625c235f8b6",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/npm-audit-report",
+      "version": "8.0.0",
+      "packageJsonSha256": "952067366295b176543510003d054373b3b3f7395c546987775b2eb18914a817",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/npm-install-checks",
+      "version": "9.0.0",
+      "packageJsonSha256": "70867910a30197020e69c5a18423ae5cf8e90386c88b5fa07b0be6f7670cc9da",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/npm-package-arg",
+      "version": "14.0.0",
+      "packageJsonSha256": "5f4e94a829ee5893b15168657c3a6268258961c86ab5230ff08ee4a2f6fe0f2b",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/npm-packlist",
+      "version": "11.3.0",
+      "packageJsonSha256": "d11f2880b951f0b3856f20269ef581aa81ca3986d18a51d737c74b609d13e9fb",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/npm-packlist/node_modules/ignore-walk",
+      "version": "9.0.0",
+      "packageJsonSha256": "d7119f0f3ea970d6bf75ad0f391dca2a35ac3e14f28afa162ffe7a303d001f5d",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/npm-pick-manifest",
+      "version": "12.0.0",
+      "packageJsonSha256": "a900dadba69e0677aab7d4c9da8308e3e5558e574c7c945bed0e498f967c36c7",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/npm-pick-manifest/node_modules/npm-normalize-package-bin",
+      "version": "6.0.0",
+      "packageJsonSha256": "9ebac37059e17adaf6d0b062d6614ec77c4f03ab6959688f3e8b8db0a57978eb",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/npm-profile",
+      "version": "13.0.1",
+      "packageJsonSha256": "a71ffcbb222a2af2736766fb53639260553762bf8876020dd22b0bbba4a1b405",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/npm-registry-fetch",
+      "version": "20.0.1",
+      "packageJsonSha256": "5bbf80cc6d910b5b260493202d67176e4bd7abf28ece92f424fdcc2a657c6686",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/npm-user-validate",
+      "version": "5.0.0",
+      "packageJsonSha256": "869a4eb2d0545c9d3978909f264fc020dac551b1424209d769c69f5eb1aae0c8",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/p-map",
+      "version": "7.0.5",
+      "packageJsonSha256": "0f0878691c8061be2207af35c88800a65a1984ccc3a29f18ba87c99c640cd980",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/pacote",
+      "version": "22.0.0",
+      "packageJsonSha256": "91b6e0507b0f85ace44164030c1561265159ab9edece4bcf74c483d26ce1f451",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/parse-conflict-json",
+      "version": "6.0.0",
+      "packageJsonSha256": "41c4463d7f0a6f96274bd54fba566b62b1017a52fb15f961fac0f7cf679e57f1",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/path-scurry",
+      "version": "2.0.2",
+      "packageJsonSha256": "fb54fe908dbe5f288bd1c5d7429f033c4f527f435c3d3a583ee0ce9e78992087",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/postcss-selector-parser",
+      "version": "7.1.4",
+      "packageJsonSha256": "260af17117b45e947983fee16dde83232170796a318dd68ad82ff7f2777c7e2c",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/proc-log",
+      "version": "7.0.0",
+      "packageJsonSha256": "7238052df3a59ae915652dd280efb74d5020ec4e414ec4f4d8356ae3325ab96a",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/proggy",
+      "version": "4.0.0",
+      "packageJsonSha256": "fc365eeaab0c30878536a397103e405837e5751b1ba57a31678b4ad63e88f339",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/promise-all-reject-late",
+      "version": "1.0.1",
+      "packageJsonSha256": "ef9ce306616fe550aaefdb5d3770bf9d0dddce3b512bca8f1e621f0401850fae",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/promise-call-limit",
+      "version": "3.0.2",
+      "packageJsonSha256": "ff202bc02a6d7369f69c8abaf4b12b9af44f2f0c03bc07802cd629f7cb369be2",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/promzard",
+      "version": "4.0.0",
+      "packageJsonSha256": "992e703c854191d48f46cf124fd8d42c830a6c1533b97949db0d65ff8f698871",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/proxy-agent-negotiate",
+      "version": "1.1.0",
+      "packageJsonSha256": "7b7c2579ea138d20d4f7699ca78ef16c526f35168dbf694f1d47cc861b0954d4",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/qrcode-terminal",
+      "version": "0.12.0",
+      "packageJsonSha256": "25c89a03126b144a0080c0200a25037d0f2fb0a49177506776cfb492210955cd",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/read",
+      "version": "6.0.0",
+      "packageJsonSha256": "223b413622d1252e11a4544ddac6897c4be15e7e683d3d15cae7c99a8d9b9a79",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/safer-buffer",
+      "version": "2.1.2",
+      "packageJsonSha256": "4247a3a63c45a6a7ced1557fe4dd9d2a163af4915d594b95e5867b69a53edb52",
+      "peer": false,
+      "optional": true
+    },
+    {
+      "path": "node_modules/npm/node_modules/semver",
+      "version": "7.8.5",
+      "packageJsonSha256": "7c94cb7f2a53c27b20d76386ec144c062894dbcc909cfabd0f728c37874b1776",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/signal-exit",
+      "version": "4.1.0",
+      "packageJsonSha256": "cd1c6cfa95782e432dd2affaa88c3a6dda7f46c8088d91f3acc0fba79dce5075",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/sigstore",
+      "version": "5.0.0",
+      "packageJsonSha256": "efdd5c6b58f7f179aa562c2a467e387dbe1f08b54a51f553932963043ad0695d",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/smart-buffer",
+      "version": "4.2.0",
+      "packageJsonSha256": "188644cdf467d6a768ad25ed3ee8eb845dc5cb29aadc4c88ca7c5cb5f631d66a",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/socks",
+      "version": "2.8.9",
+      "packageJsonSha256": "eaddd44b758b8d53f4a9c11807748a7372319ef6b4ee680ac5e48ca64aece161",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/socks-proxy-agent",
+      "version": "10.1.0",
+      "packageJsonSha256": "727412a5f08e72b6097b6d16b64b151dbb45baca9742e251492fab862b11a688",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/socks-proxy-agent/node_modules/agent-base",
+      "version": "9.0.0",
+      "packageJsonSha256": "13df46dd018fcf2e4231a0f47a1a007dd7d5441d9f8efb108f50f9fb64a17138",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/spdx-exceptions",
+      "version": "2.5.0",
+      "packageJsonSha256": "0af9bd4b68c9e3d1bc7a9208881cbde84da140d564a3bb42cf53184c6e83f2e3",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/spdx-expression-parse",
+      "version": "4.0.0",
+      "packageJsonSha256": "3e8b59ed9c34d30597c8e5e3da963fe23ae97f5f20611ae523f842a7b243c044",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/spdx-license-ids",
+      "version": "3.0.23",
+      "packageJsonSha256": "669d0ba75505d331031cf79b0d208393601307f41cd4ae4355ce99e6eaef4c8c",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/ssri",
+      "version": "14.0.0",
+      "packageJsonSha256": "915c1addb2ba51bebb0ddf25c3bf8b75717f7063d8705258478f2b84d34a970d",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/supports-color",
+      "version": "10.2.2",
+      "packageJsonSha256": "f208d0897ad657613dbd6199357f1b2c082d975fffa316933cad58851eff00ed",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/tar",
+      "version": "7.5.22",
+      "packageJsonSha256": "31b18f4fb83ba7183f54fa9e2cdca610897108c37ba80570c2c6fa7ccf112d97",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/text-table",
+      "version": "0.2.0",
+      "packageJsonSha256": "2b410792046c1bf8bca05d26236cc1e301011ea67546b9c6a0416c417fa6d8b6",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/tiny-relative-date",
+      "version": "2.0.2",
+      "packageJsonSha256": "c8361a4c2576f99ba715996bb4f8ab45a5e1bb16d70a0e860858a1c85369b503",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/tinyglobby",
+      "version": "0.2.17",
+      "packageJsonSha256": "bd2b2af3c9ba0580f1acfb22c55d0b6d29abf683af5cac8a2efe82fa7c943f23",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/tinyglobby/node_modules/fdir",
+      "version": "6.5.0",
+      "packageJsonSha256": "aca49395d61ef383a09f74555c66ed45817ca2b5724e710a4dc9e0471b83d8f5",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/tinyglobby/node_modules/picomatch",
+      "version": "4.0.5",
+      "packageJsonSha256": "fb7766f5f9c724e13e075760a95d16f87cdb327143d153a913135fde267ec615",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/treeverse",
+      "version": "3.0.0",
+      "packageJsonSha256": "f3f8ef63cba6010d27629a7e08eb87d62ad1f12056d1e6a4e32de79a159a95d4",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/tuf-js",
+      "version": "6.0.0",
+      "packageJsonSha256": "1bd2ac16aa3b56fd96294c4e84a1bed6054d27f3616345256d507ebb75a52aca",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/undici",
+      "version": "6.28.0",
+      "packageJsonSha256": "f529aa8b145f6e270a72700ceb6c8dd3b87f742313078ea9f774a9d2ce8c865d",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/util-deprecate",
+      "version": "1.0.2",
+      "packageJsonSha256": "7bba467f049074957e693fc06672848b040c38fa071b6eed8690f5fbe090a8b2",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/validate-npm-package-name",
+      "version": "8.0.0",
+      "packageJsonSha256": "44cacea7161bec3b3a0ac8912db0fe93345a0925e6cfad3bcf9e7d92fab7b70d",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/walk-up-path",
+      "version": "4.0.0",
+      "packageJsonSha256": "6a64187fa9c6078376375304a297f003a694164087f0b4bdf534c547fca41837",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/which",
+      "version": "7.0.0",
+      "packageJsonSha256": "e1d612f9c8449c223ac61ee9afee5c4d568d601af878204a40583ccbe966e621",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/write-file-atomic",
+      "version": "8.0.0",
+      "packageJsonSha256": "6e5ed60378a3bcc4c12a7ecbb10bdf46dace69ae542ae9f71f9b9cc3ad04a0c7",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/npm/node_modules/yallist",
+      "version": "5.0.0",
+      "packageJsonSha256": "1b9d47057ce39814531ff93f668823b4fa03e7d23945449c274a1ff6d4cc297f",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/react",
+      "version": "19.3.0",
+      "packageJsonSha256": "6e003e4e9ed25afa7fdd55613f8aa877cefa9b359d9c13f81ee704030248e24e",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/react-dom",
+      "version": "19.3.0",
+      "packageJsonSha256": "136d4af63de473392ea79d6a21932b0ed9eb37fe518ce70f4621250f3d79e9bb",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/scheduler",
+      "version": "0.28.0",
+      "packageJsonSha256": "06290718f22bcd93f29eaa1ac8d2ec9a7592ba4fec12bf1230e7cdd9a871b324",
+      "peer": false,
+      "optional": false
+    },
+    {
+      "path": "node_modules/undici",
+      "version": "8.11.2",
+      "packageJsonSha256": "05686bb347560226dd9fffc0c8152e5d9aa154c76d9eeceae11b52d42eb6e1db",
+      "peer": false,
+      "optional": false
+    }
+  ],
+  "excluded": [],
+  "equivalentFiles": [
+    {
+      "path": "node_modules/7zip-bin/win/x64/7za.exe",
+      "sha256": "b0cfdeaf429f5cc53f85123dd8f5a5feb92c19d31aa34df257edf9a26be05f95"
+    }
+  ]
+}

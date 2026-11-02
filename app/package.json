@@ -1,0 +1,22 @@
+{
+  "name": "airoom",
+  "version": "0.1.0",
+  "private": true,
+  "description": "本地多成员 AI 工作台",
+  "main": "dist/main.mjs",
+  "type": "module",
+  "dependencies": {
+    "7zip-bin": "5.2.0",
+    "lucide-react": "1.51.0",
+    "npm": "12.1.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "undici": "8.11.2"
+  },
+  "allowScripts": {
+    "@anthropic-ai/claude-code@2.1.288": true,
+    "esbuild@0.28.2": true,
+    "electron@44.5.1": true,
+    "electron-winstaller@5.4.0": true
+  }
+}

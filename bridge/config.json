@@ -1,0 +1,38 @@
+{
+  "workspace_root": "../workspace",
+  "codex_path": "auto",
+  "python_dir": "auto",
+  "default_handler": "engine",
+  "max_attempts": 4,
+  "interval": 3,
+  "intake": {
+    "enabled": true
+  },
+  "roles": {
+    "planner": "codex",
+    "executor": "codex",
+    "reviewer": "codex",
+    "planner_channel": "codex",
+    "executor_channel": "workbuddy"
+  },
+  "planner": {
+    "model": null,
+    "effort": "low",
+    "sandbox": "read-only",
+    "timeout": 300
+  },
+  "executor": {
+    "driver": "codex",
+    "model": null,
+    "effort": "medium",
+    "sandbox": "workspace-write",
+    "timeout": 1500,
+    "command": ""
+  },
+  "reviewer": {
+    "model": null,
+    "effort": "medium",
+    "sandbox": "read-only",
+    "timeout": 900
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "agents": [
+    {
+      "id": "codex",
+      "name": "Codex",
+      "kind": "cli",
+      "builtin": true,
+      "desc": "规划 + 审核（调用本机 codex exec）",
+      "cmd": ""
+    },
+    {
+      "id": "workbuddy",
+      "name": "WorkBuddy",
+      "kind": "mcp",
+      "builtin": true,
+      "desc": "执行：在 WorkBuddy 里通过 MCP 领活/交活",
+      "cmd": ""
+    }
+  ]
+}
